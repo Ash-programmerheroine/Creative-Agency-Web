@@ -21,6 +21,7 @@ Global Css
 ====== */
 body{
     font-family: 'Montserrat', sans-serif;
+    color: #484848;
 }
 h5,h6{font-family: 'Poppins', sans-serif;}
 a{text-decoration: none;}
@@ -28,8 +29,8 @@ ul{padding: 0;
     margin: 0;
     list-style: none;
 }
-.paddig-top-100{
-    padding-top: 100px;
+.paddig-banner{
+    padding: 0px 0px 0 60px;
 }
 
 /* ====
@@ -39,29 +40,35 @@ header{
     background: url(../images/banner-bg.gif) no-repeat center;
     background-size: cover;
 }
-.navbar-light .navbar-nav .nav-link {color: antiquewhite;}
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(255,255,255);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+    margin: 0 12px;
+}
 .navbar-light .navbar-nav .nav-link:hover {color:  #f42267;}
 
 .banner{
-    padding: 120px 0 0;
+    padding: 200px 0 170px;
     position: relative;
 }
 .banner h3{
     font-size: 27px;
     font-style: italic;
     font-weight: 300;
-    color: white;
+    color: #fff;
     margin: 0;
 }
 .banner h1{
     font-size: 46px;
-    color: white;
+    color: #fff;
     font-weight: 600;
     padding: 20px 0;
     margin: 0;
 }
 .banner p{
-    color: white;
+    color: #fff;
     font-size: 17px;
     font-weight: 300;
     margin-bottom: 4rem;
@@ -88,4 +95,106 @@ header{
     font-weight: 600;
     border-radius: 20px;
     margin-right: 6px;
+}
+.position-img{position: relative;}
+.banner-img{   
+    position: absolute;
+    top: -111px;
+    left: 480px;
+    width: 50%;}
+
+/* =================
+About Company Css
+================== */
+.about-company{
+    padding: 120px 0;
+    background: url(../images/world-map-bg.gif) no-repeat center;
+    background-size: cover;
+}
+.about-company  h3{
+    font-size: 27px;
+    font-style: italic;
+    font-weight: 300;
+    margin: 0;
+}
+.about-company h2{
+    font-size: 44px;
+    font-weight: 600;
+    padding: 20px 0 40px;
+    margin: 0;;
+}
+.about-company ul li{
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    margin: 0 14px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.about-company .active{
+    color: #fff;
+    background: #f42267;
+    border: none;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    box-shadow: 2px 2px 10px gray ;
+    
+}
+.about-company p{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 40px 0;
+    margin: 0;
+
+}
+.about-company img{
+    display: block;
+    margin: 0 auto;
+}
+/* =================
+ Our Achievement Css
+================== */
+.achievement{
+    background: #4b2d7f;
+}
+.achievement img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 75px;
+}
+.achievement h2{
+    color: #fff;
+    margin: 0;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+    padding: 30px 0 0px;
+}
+.achievement h3{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.achievement span{
+    display: block;
+    margin: 0;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center; 
+}
+.achievement p{
+    color:#9583b4;
+    margin: 0;
+    font-size: 16px;
+    font-weight:300;
+    text-align: center;
+    padding: 20px 33px 75px;
+}
+.specialised-employee{
+    background:#40286a ;
 }
